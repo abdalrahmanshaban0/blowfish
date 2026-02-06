@@ -19,6 +19,7 @@
         class="!mt-0 !mb-0 h-24 w-24 rounded-full me-4"
         width="96"
         height="96"
+        alt="{{ with .data.name }}{{ . }} profile picture{{ else }}Author profile picture{{ end }}"
         src="{{ $final.RelPermalink }}"
         data-zoom-src="{{ $squareImage.RelPermalink }}">
     {{ end }}
